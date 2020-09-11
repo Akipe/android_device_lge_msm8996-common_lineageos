@@ -177,7 +177,6 @@ BOARD_ROOT_EXTRA_FOLDERS := firmware persist persist-lg sns mpt
 TARGET_NEEDS_PDFIUM_BIGINT := true
 
 # Power
-TARGET_HAS_NO_WLAN_STATS := true
 
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
