@@ -39,8 +39,14 @@ inline const char* BtmGetDefaultName()
 }
 
 #define BTM_DEF_LOCAL_NAME BtmGetDefaultName()
-#define BTA_DISABLE_DELAY 1000 /* in milliseconds */
-#define BTM_SCO_ENHANCED_SYNC_ENABLED FALSE
+//#define BTA_DISABLE_DELAY 1000 /* in milliseconds */
+//#define BTM_SCO_ENHANCED_SYNC_ENABLED FALSE
+#define BLUETOOTH_QTI_SW TRUE
+#define MAX_ACL_CONNECTIONS   16
+#define MAX_L2CAP_CHANNELS    16
+#define BLE_VND_INCLUDED   TRUE
+#define BT_CLEAN_TURN_ON_DISABLED 1
+#define AVDT_NUM_SEPS 12
 
 #pragma pop_macro("PROPERTY_VALUE_MAX")
 

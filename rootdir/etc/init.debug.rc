@@ -1,0 +1,17 @@
+on post-fs-data
+    start vendor.debug-log
+
+on property:vold.decrypt=trigger_restart_framework
+    start vendor.debug-log
+
+service vendor.debug-log /vendor/bin/init.debug.log.sh
+    class main
+    user root
+    group root system
+    oneshot
+
+service vendor.debug-log-latestart init.debug.log.latestart.sh
+    class late_start
+    user root
+    group root system
+    oneshot
